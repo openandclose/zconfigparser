@@ -43,14 +43,14 @@ Usage
     x=bbb
     y=bbb
 
-    >>>from zconfigparser import ZConfigParser
-    >>>config = ZConfigParser()
-    >>>config.read('myconfig.ini')
-    >>>config.get('aa : bb', 'x')
+    >>> from zconfigparser import ZConfigParser
+    >>> config = ZConfigParser()
+    >>> config.read('myconfig.ini')
+    >>> config.get('aa : bb', 'x')
     aaa
-    >>>config.get('aa', 'x')
+    >>> config.get('aa', 'x')
     aaa
-    >>>config.get('aa', 'y')
+    >>> config.get('aa', 'y')
     bbb
 
 * ``[aa]`` doesn't have ``y`` option,
