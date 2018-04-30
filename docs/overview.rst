@@ -142,7 +142,7 @@ Lookup order is depth-first.
     [ee]
     x=eee
 
-    >>>config.get('aa', 'x')
+    >>> config.get('aa', 'x')
     ddd                     ## order: aa -> bb -> dd -> cc -> ee
 
 dot separator:
