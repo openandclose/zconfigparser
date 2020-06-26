@@ -17,7 +17,7 @@ html:
 
 test: git
 	pytest -x
-	tox
+	PYTHONPATH= tox
 
 flake8: git
 	flake8 .
