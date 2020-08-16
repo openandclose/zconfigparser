@@ -25,7 +25,6 @@ setup(
         'Intended Audience :: End Users/Desktop',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python :: 3 :: Only',
-        'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -34,7 +33,7 @@ setup(
     keywords='ini config configparser',
     # packages=find_packages(exclude=['docs', 'tests', 'nonpubfiles']),
     py_modules=['zconfigparser'],
-    python_requires='~=3.5',
+    python_requires='~=3.6',
     extras_require={
         'test': ['pytest'],
         'dev': ['pytest', 'sphinx'],

@@ -2,7 +2,7 @@
 Zconfigparser
 =============
 
-This is a python3 (3.5+) library
+This is a python3 (3.6+) library
 to provide some section inheritance functionality
 to `configparser <https://docs.python.org/3/library/configparser.html>`__.
 
