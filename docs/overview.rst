@@ -21,7 +21,7 @@ Installation
 
 It is a single file Python module, with no other library dependency.
 
-**Python 3.6 and above** are supported.::
+Tested on Python 3.10 and later.
 
     pip install zconfigparser
 
