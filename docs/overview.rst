@@ -23,13 +23,9 @@ It is a single file Python module, with no other library dependency.
 
 Tested on Python 3.10 and later.
 
+.. code:: bash
+
     pip install zconfigparser
-
-.. note ::
-
-    It is mainly developed for `my other script <https://github.com/openandclose/tosixinch>`__.
-
-    And it is meant to be an user-level script helper.
 
 Usage
 -----
@@ -58,11 +54,13 @@ Usage
 
 * In ``.get``, both section names ``[aa]`` and ``[aa : bb]`` can be used.
   They are called
-  ``short [section] name`` and ``long [section] name`` respectively.
+  ``short (section) name`` and ``long (section) name`` respectively.
 
-* the original ``Configparser`` values are preserved in item accesses
-  e.g. ``config['aa : bb']['x']``.
-  (So only ``long name`` can be used there).
+.. note ::
+
+    the original ``Configparser`` values are preserved, as is, in dictionary item accesses.
+    (So ``config['aa : bb']['x']`` is ``'aaa'``.
+    ``config['aa']['x']`` and ``config['aa : bb']['y']`` raise Error).
 
 
 Specification
@@ -108,8 +106,7 @@ Added Functions
         False
 
 ``.zsections()``
-    Return a set containing all short section names in config.
-    Accept ``long names`` and ``short names``.
+    Return a set containing all short and long section names in config.
 
     It also does error checks config-wide. See `below <#errors>`__
 
